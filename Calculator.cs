@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ASP.NET_Core_Web_API
 {
-    internal class Class1
+     public int Sum(int x, int y)
     {
-    }
+         return x + y;
+     }
 }
