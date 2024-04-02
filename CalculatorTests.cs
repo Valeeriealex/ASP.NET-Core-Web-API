@@ -24,9 +24,12 @@ namespace ASP.NET_Core_Web_API
         [InlineData(0, -1, 1)]
         public void Calculator_AddTwoNumbers_ReturnsCorrectSum(int expectrd, int x, int y)
         {
-
+            var sum = new Calculator();
+            var result = sut.Sum(x, y);
+            Assert.Equal(expected, result);
         }
     }
+}
 
 
 }
